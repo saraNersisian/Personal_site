@@ -13,7 +13,7 @@ h1{
   right:0;
   display:inline-block;
   position: absolute;
-  top:150px;
+  top:100px;
   text-align: center;
 
 }
@@ -24,68 +24,107 @@ p{
   right:0;
   display: inline-block;
   position: absolute;
-  top: 200px;
+  top: 150px;
 }
 
 .top-container{
   background-color: #F8A1D1;
   width: 100%;
-  height: 400px;
+  height: 300px;
 }
 
 .middle-container{
-  height: 700px;
+  height: 1000px;
   width: 100%;
   background-color: #FFEACA;
 }
 
 .bottom-container{
-  height: 10%;
-  width: 200px;
-  background-color: blue;
+  height: 200px;
+  width: 100%;
+  background-color: #835151;
 }
 
-.top-cloud{
+.right-cloud{
   height: 100px;
   position:absolute;
-  top: 200px;
-  right: 20px;
-  left: 900px;
+  top: 250px;
+  right: 380px;
 }
 
-.top-cloud:hover{
-  left:890px;
+.right-cloud:hover{
+  right:390px;
 }
-.bottom-cloud{
-  height: 70px;
+.left-cloud{
+  height: 110px;
   position:absolute;
-  left:100px;
-  top:100px;
+  left:280px;
+  top:160px;
   /* filter: drop-shadow(10px 10px 2px #F8A1D1); */
 }
 
-.bottom-cloud:hover{
-  left:90px;
+.left-cloud:hover{
+  left:230px;
 }
+
+.cloud-with-eyes{
+  width: 250px;
+  position: absolute;
+  left:50px;
+  transform: rotate(-10deg) ;
+}
+
 
 .rain-drop{
   width: 60px;
+  display: none;
   position:absolute;
-  left:125px;
-  top:160px;
+  left:350px;
+  top:190px;
 }
 
-.rain-drop:hover{
-  transform: rotate(20deg);
+.cloud-blowing-wind{
+  width: 500px;
+  position: absolute;
+  right:120px;
+  transform:scaleX(-1) rotate(-10deg) ;
 }
+
+
+/*
+.rain-drop:hover{
+  transform:scale(1) translate(-100%, -100%);
+}
+*/
 
 .yellow-bee{
   width: 100px;
   position: absolute;
-  top:300px;
-  right:70%;
+  top:215px;
+  right:85%;
   transform: scaleX(-1);
 }
+
+.yellow-bee .bee-path{
+  position: absolute;
+  left: 0;
+  top: 0;
+  display: none;
+}
+
+.bee-path{
+  width:350px;
+  position: absolute;
+  top:290px;
+  right:56%;
+}
+/*
+.bee-path:hover{
+  position: absolute;
+  top:310px;
+  right:30%;
+}
+*/
 
 .yellow-bee:hover{
   transform: rotate(20deg) scaleX(-1);
